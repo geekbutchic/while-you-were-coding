@@ -19,16 +19,21 @@ for (let i = 0; i < str.length; i++) {
   if (str[i] % 3 === 0) 
   console.log(value);
 }
+// Without array version 
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        console.log(i);
+    }
+}
 
 console.log("##### Challenge 2 #####");
 // 2.
 
 // Console out the numbers from 1-20. BACKWARDS.
-
+// Here I was using the array for visual purposes since I'm using Quokka.
 for (let  i = str.length - 1; i >= 0; i--) {
         console.log(str[i]);
 }
-
 console.log("##### Challenge 3 #####");
 // 3.
 
@@ -40,7 +45,10 @@ for (let i = 0; i < string3.length; i++) {
     const value = string3[i];
     console.log(value);
 }
-
+// or for loop option 
+for (letter of string3) {
+    console.log(letter);
+}
 console.log("##### Challenge 4 #####");
 // 4.
 
@@ -48,10 +56,11 @@ console.log("##### Challenge 4 #####");
 // character, print out every third character.
 let string4 = "And getting better every day.";
 
-for (let i = 1; i < string4.length; i++) {
-    const value = string4[i ];
-    console.log(value);
+// n g t g ... letter to print
+for (let i = 1; i < string4.length; i + 3) {
+    console.log(i);
 }
+
 
 console.log("##### Challenge 5 #####");
 // 5.
