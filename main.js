@@ -81,9 +81,11 @@ console.log("##### Challenge 6 #####");
 // but also capitalize the letters in the third word.
 let string6 = "Whoa, I am the best!";
 
-for (let i = 0; i < string5.length; i++) {
-    const value = string5[i];
-    console.log(value.toUpperCase());
+let list = string6.split(' ')
+for (let i=0; i<list.length;i++){
+    if(i===2){
+        list[i] = list[i].toUpperCase()
+    }
 }
 
 console.log("##### Challenge 7 #####");
