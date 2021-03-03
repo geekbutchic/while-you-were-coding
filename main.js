@@ -25,8 +25,9 @@ console.log("##### Challenge 2 #####");
 
 // Console out the numbers from 1-20. BACKWARDS.
 
-const reversed = str.reverse();
-console.log(reversed);
+for (let  i = str.length - 1; i >= 0; i--) {
+        console.log(str[i]);
+}
 
 console.log("##### Challenge 3 #####");
 // 3.
@@ -42,13 +43,13 @@ for (let i = 0; i < string3.length; i++) {
 
 console.log("##### Challenge 4 #####");
 // 4.
-//
+
 // For the string, 'And getting better every day.', starting with the second
 // character, print out every third character.
 let string4 = "And getting better every day.";
 
 for (let i = 1; i < string4.length; i++) {
-    const value = string4[i];
+    const value = string4[i ];
     console.log(value);
 }
 
@@ -84,7 +85,7 @@ console.log("##### Challenge 7 #####");
 // `.`, followed by `s`, followed by `d`, and so on.
 let string7 = "I am become death, destroyer of worlds.";
 
-for (var i = string7.length - 1; i >= 0; i--) {
+for (let  i = string7.length - 1; i >= 0; i--) {
         console.log(string7[i]);
 }
 console.log("##### Challenge 8 #####");
