@@ -48,7 +48,7 @@ console.log("##### Challenge 4 #####");
 let string4 = "And getting better every day.";
 
 for (let i = 1; i < string4.length; i++) {
-    const value = string4[i + 1];
+    const value = string4[i];
     console.log(value);
 }
 
@@ -84,16 +84,27 @@ console.log("##### Challenge 7 #####");
 // `.`, followed by `s`, followed by `d`, and so on.
 let string7 = "I am become death, destroyer of worlds.";
 
+for (var i = string7.length - 1; i >= 0; i--) {
+        console.log(string7[i]);
+}
 console.log("##### Challenge 8 #####");
 // 8.
 //
-const names =
+const studentNames =
   "Alex|Mesuara|Brian|Chanel|Matt|Jeremy B.|Jose|Andy|Dustin|Joshua|Steve H.|Cesar|Nastya|Jeremy L.|Michael|John|Lee|Ruth|Steve M.|Tim|Ronny|Stevie R|Neo|Rick|Kyle|Minahil|Adam|Sonny|James|Daisy|Willie";
 
 // Console out the individual letters of each person in class, which are
 // in the string above. Every time you start a new name (including the first
 // one!), console out the string: 'Here today is:'.
 
+for (const value of studentNames) {
+    let output = [];
+    if (value === '|') {
+        output.push(value + "Here today is: ")
+    }
+    return output;
+} 
+console.log(output);
 // You'll know you're at a new person's name when you hit the pipe character.
 
 // Don't print the pipes!
